@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yash Sinha</title>
+    <link rel="icon" type="image/png" href="yash0001.png" />
+
+    <!-- Ramaraja — heading serif (matches gracesportfolio.com) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Reveal mode: force all data-scroll elements visible (used for screenshots) -->
+    <script>
+      if (location.search.includes("reveal"))
+        document.documentElement.classList.add("reveal-mode");
+    </script>
+    <!-- All styles in external file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- ══════════════════════════════════════
+       FIXED NAV BAR
+  ══════════════════════════════════════ -->
+    <header id="topbar">
+      <div id="nameplate">
+        <a href="#">yash sinha</a>
+      </div>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#work">work</a></li>
+          <li><a href="#achievements">achievements</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#about">about</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ══════════════════════════════════════
+       PAGE CONTENT
+  ══════════════════════════════════════ -->
+    <div class="page-wrap">
+      <!-- ── HERO ── -->
+      <section class="hero" data-scroll>
+        <div class="hero-left">
+          <div class="hero-bio">
+            <br /><br />Hi, I'm Yash Sinha —<br />a B.Tech Computer Science Engineering
+            student at Birla Institute of Technology, Mesra.<br />I build things
+            that are technically rigorous and actually useful — from AI agents
+            to interactive algorithm visualizers.
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="yash_gif.webp" alt="Yash Sinha" />
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════
+         WORK
+    ══════════════════════════════════════ -->
+      <section class="section-block" id="work">
+        <div class="section-head" data-scroll>
+          <h2>work</h2>
+          <span class="section-hint">selected projects</span>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Card 1: E-Commerce Assistant Agentic AI -->
+          <div class="card-frame" data-scroll>
+            <div class="work-card">
+              <div class="card-visual grad-ai-commerce"></div>
+              <div class="card-body">
+                <div class="card-project-type">AI Agents · Jun 2025</div>
+                <div class="card-title">
+                  <span class="underline-ai">E-Commerce Assistant AI</span>
+                </div>
+                <div class="card-desc">
+                  Agentic bot that gives real-time product recommendations
+                  across multiple e-commerce sites, checks discounts and
+                  pin-code availability. Deployed on Google Cloud VM.
+                </div>
+                <div class="card-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">LangGraph</span>
+                  <span class="tag">GCP</span>
+                  <span class="tag">LLMs</span>
+                  <span class="tag">Docker</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Algorithm Visualizer Collection -->
+          <div class="card-frame" data-scroll>
+            <div class="work-card">
+              <div class="card-visual grad-algo-viz"></div>
+              <div class="card-body">
+                <div class="card-project-type">Full-Stack · May 2025</div>
+                <div class="card-title">
+                  <span class="underline-algo">Algorithm Visualizer</span>
+                </div>
+                <div class="card-desc">
+                  Interactive platform to visually demonstrate core algorithms
+                  across devices. Frontend on Vercel, Python backend on Google
+                  Cloud. Tested across multiple screen sizes.
+                </div>
+                <div class="card-tags">
+                  <span class="tag">React</span>
+                  <span class="tag">Express</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Python</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════
+         ACHIEVEMENTS
+    ══════════════════════════════════════ -->
+      <section class="section-block" id="achievements">
+        <div class="section-head" data-scroll>
+          <h2>achievements</h2>
+          <span class="section-hint">competitions · roles · recognition</span>
+        </div>
+
+        <div class="cards-grid">
+          <!-- NatWest Internship -->
+          <div class="card-frame" data-scroll>
+            <div class="work-card">
+              <div class="card-visual grad-sae"></div>
+              <div class="card-body">
+                <div class="card-project-type">Internship · Aug 2025</div>
+                <div class="card-title">
+                  <span class="underline-sae">NatWest Group</span>
+                </div>
+                <div class="card-desc">
+                  Selected for the summer internship program at NatWest Group
+                  for 2026 — one of the competitive engineering roles across
+                  India.
+                </div>
+                <div class="card-tags">
+                  <span class="tag">Software Engineering</span>
+                  <span class="tag">Finance Tech</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CodeSmash 4.0 -->
+          <div class="card-frame" data-scroll>
+            <div class="work-card">
+              <div class="card-visual grad-yourStory"></div>
+              <div class="card-body">
+                <div class="card-project-type">Feb 2026 · Rank 15</div>
+                <div class="card-title">
+                  <span class="underline-hack">CodeSmash 4.0</span>
+                </div>
+                <div class="card-desc">
+                  Ranked 15th at Mercer Mettl's CodeSmash 4.0 among 1000+
+                  participants nationwide — a competitive programming contest
+                  testing algorithms and problem-solving speed.
+                </div>
+                <div class="card-tags">
+                  <span class="tag">Rank 15</span>
+                  <span class="tag">1000+ participants</span>
+                  <span class="tag">CP</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- IMC Prosperity 4.0 -->
+          <div class="card-frame" data-scroll>
+            <div class="work-card">
+              <div class="card-visual grad-tech-head"></div>
+              <div class="card-body">
+                <div class="card-project-type">Apr 2026 · Top 14%</div>
+                <div class="card-title">
+                  <span class="underline-tech">IMC Prosperity 4.0</span>
+                </div>
+                <div class="card-desc">
+                  Finalist — finished in the top 14% out of 18,000+ participants
+                  globally in IMC's algorithmic trading challenge.
+                </div>
+                <div class="card-tags">
+                  <span class="tag">Top 14%</span>
+                  <span class="tag">18,000+ participants</span>
+                  <span class="tag">Algo Trading</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ICPC -->
+          <div class="card-frame" data-scroll>
+            <div class="work-card">
+              <div class="card-visual grad-open"></div>
+              <div class="card-body">
+                <div class="card-project-type">Nov 2024 · 2nd in College</div>
+                <div class="card-title">
+                  <span class="underline-open">ICPC Qualification</span>
+                </div>
+                <div class="card-desc">
+                  Finished 2nd overall in college in the ICPC qualification
+                  round, advancing through competitive problem solving in teams.
+                </div>
+                <div class="card-tags">
+                  <span class="tag">ICPC</span>
+                  <span class="tag">2nd in College</span>
+                  <span class="tag">Competitive Programming</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- IEEE Technical Content Head -->
+          <div class="card-frame" data-scroll>
+            <div class="work-card">
+              <div class="card-visual grad-algo-viz"></div>
+              <div class="card-body">
+                <div class="card-project-type">Leadership · 2025 – Present</div>
+                <div class="card-title">
+                  <span class="underline-algo">Technical Content Head</span>
+                </div>
+                <div class="card-desc">
+                  Leading technical content and events at the IEEE Student
+                  Chapter, BIT Mesra — organising workshops, coding contests,
+                  and mentoring fellow students.
+                </div>
+                <div class="card-tags">
+                  <span class="tag">IEEE</span>
+                  <span class="tag">Leadership</span>
+                  <span class="tag">Mentoring</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- HackerRank -->
+          <div class="card-frame" data-scroll>
+            <div class="work-card">
+              <div class="card-visual grad-ai-commerce"></div>
+              <div class="card-body">
+                <div class="card-project-type">Ongoing · Platform Rating</div>
+                <div class="card-title">
+                  <span class="underline-ai">HackerRank ★ Rated</span>
+                </div>
+                <div class="card-desc">
+                  Star-rated in problem solving on HackerRank. Active across
+                  competitive programming platforms — consistent in DSA,
+                  algorithms, and data structures.
+                </div>
+                <div class="card-tags">
+                  <span class="tag">Problem Solving</span>
+                  <span class="tag">DSA</span>
+                  <span class="tag">Algorithms</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════
+         SKILLS
+    ══════════════════════════════════════ -->
+      <section class="section-block" id="skills">
+        <div class="section-head" data-scroll>
+          <h2>skills</h2>
+          <span class="section-hint">in order of relevance / proficiency</span>
+        </div>
+
+        <div class="skills-wrap">
+          <div class="skill-row" data-scroll>
+            <div class="skill-category">Languages</div>
+            <div class="skill-tags">
+              <span class="stag">C</span>
+              <span class="stag">C++</span>
+              <span class="stag">Python</span>
+              <span class="stag">JavaScript</span>
+              <span class="stag">SQL</span>
+              <span class="stag">HTML</span>
+              <span class="stag">CSS</span>
+            </div>
+          </div>
+
+          <div class="skill-row" data-scroll>
+            <div class="skill-category">Tools</div>
+            <div class="skill-tags">
+              <span class="stag">Git</span>
+              <span class="stag">GitHub</span>
+              <span class="stag">Postman</span>
+              <span class="stag">Docker</span>
+              <span class="stag">Google Cloud</span>
+              <span class="stag">VS Code</span>
+              <span class="stag">Linux</span>
+            </div>
+          </div>
+
+          <div class="skill-row" data-scroll>
+            <div class="skill-category">Frameworks</div>
+            <div class="skill-tags">
+              <span class="stag">React</span>
+              <span class="stag">Node.js</span>
+              <span class="stag">Express</span>
+              <span class="stag">Tailwind CSS</span>
+              <span class="stag">LangGraph</span>
+              <span class="stag">LangChain</span>
+            </div>
+          </div>
+
+          <div class="skill-row" data-scroll>
+            <div class="skill-category">Coursework</div>
+            <div class="skill-tags">
+              <span class="stag">Data Structures</span>
+              <span class="stag">Algorithms</span>
+              <span class="stag">DBMS</span>
+              <span class="stag">Operating Systems</span>
+              <span class="stag">OOP</span>
+              <span class="stag">Computer Networks</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════
+         ABOUT
+    ══════════════════════════════════════ -->
+      <section class="section-block" id="about">
+        <div class="section-head" data-scroll>
+          <h2>about</h2>
+          <span class="section-hint">a little bit about me</span>
+        </div>
+
+        <!-- row 1: two photos left · bio text right -->
+        <div class="about-row" data-scroll>
+          <div class="about-photos-pair">
+            <img class="about-photo" src="ayush_yash.png" alt="with friends" />
+            <img class="about-photo" src="yash_anar.png" alt="dinner out" />
+          </div>
+          <div class="about-text">
+            <p>
+              Hi, I'm Yash Sinha — a B.Tech Computer Science Engineering
+              student at Birla Institute of Technology, Mesra (CGPA 8.94). I
+              build things that are technically rigorous and actually useful —
+              from AI agents to interactive algorithm visualizers.
+            </p>
+          </div>
+        </div>
+
+        <!-- row 2: paragraph + photo side by side, buttons below unaffected -->
+        <div class="about-row" data-scroll>
+          <div class="about-text">
+            <div class="about-para-photo">
+              <div class="about-para-stack">
+                <p>
+                  My work sits at the intersection of software engineering and
+                  systems thinking. I'm currently Technical Content Head at the IEEE
+                  Student Chapter, BIT Mesra, where I run workshops and mentor
+                  students on development and competitive programming.
+                </p>
+                <p>
+                  I'm competitive — ranked in ICPC, CodeSmash, and IMC Prosperity.
+                  Always looking for problems worth solving, whether through code,
+                  systems design, or a good conversation. Open to internships and
+                  collaborations.
+                </p>
+              </div>
+              <img class="about-photo about-photo-right" src="bit_mesra.png" alt="BIT Mesra" />
+            </div>
+
+            <div class="about-socials">
+              <a
+                class="social-btn"
+                href="https://www.linkedin.com/in/yash-sinha-29885128b/"
+                target="_blank"
+                >LinkedIn ↗</a
+              >
+              <a class="social-btn" href="mailto:yashsinha26042005@gmail.com"
+                >Email ↗</a
+              >
+              <a class="social-btn" href="resume.pdf" target="_blank"
+                >Resume →</a
+              >
+            </div>
+
+            <div class="edu-block">
+              <h4>Birla Institute of Technology, Mesra</h4>
+              <p>
+                B.Tech — Computer Science Engineering &nbsp;·&nbsp; CGPA
+                8.94
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- /.page-wrap -->
+
+    <!-- ══════════════════════════════════════
+       JAVASCRIPT
+  ══════════════════════════════════════ -->
+    <script>
+      /* ── Scroll animation via IntersectionObserver ── */
+      if (location.search.includes("reveal")) {
+        document
+          .querySelectorAll("[data-scroll]")
+          .forEach((el) => el.classList.add("in-view"));
+      }
+
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("in-view");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.07, rootMargin: "0px 0px -40px 0px" },
+      );
+
+      document
+        .querySelectorAll("[data-scroll]")
+        .forEach((el) => io.observe(el));
+
+      /* ── Nav border thickens slightly on scroll ── */
+      const topbar = document.getElementById("topbar");
+      window.addEventListener(
+        "scroll",
+        () => {
+          topbar.style.boxShadow =
+            window.scrollY > 4 ? "0 2px 0 rgba(0,0,0,0.08)" : "none";
+        },
+        { passive: true },
+      );
+    </script>
+  </body>
+</html>

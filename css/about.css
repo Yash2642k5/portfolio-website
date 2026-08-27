@@ -1,0 +1,140 @@
+/* ════════════════════════════════════════════
+   ABOUT
+════════════════════════════════════════════ */
+/* two-row editorial layout */
+.about-row {
+  display: flex;
+  flex-direction: row;
+  gap: 3.5rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+
+/* left column of row 1: two photos side by side */
+.about-photos-pair {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 3.5rem;
+  align-items: flex-start;
+}
+
+/* base photo style — comes first so overrides below win */
+.about-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  box-shadow: 4px 6px 20px rgba(0, 0, 0, 0.45);
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.about-photo:hover {
+  box-shadow: 6px 10px 30px rgba(0, 0, 0, 0.6);
+  transform: scale(1.02);
+}
+
+/* pair photos — height-constrained so they never overflow into the next row */
+.about-photos-pair .about-photo {
+  height: 250px;
+  width: auto;
+}
+
+/* row 2 inner layout: paragraph text + bit_mesra side by side */
+.about-para-photo {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+}
+
+.about-para-photo p {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+/* stacks the two paragraphs vertically on the left side of about-para-photo */
+.about-para-stack {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+/* bit_mesra — floats right of the paragraph, doesn't touch buttons */
+.about-photo-right {
+  flex-shrink: 0;
+  height: 250px;
+  width: auto;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.about-text p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 17px;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.9;
+  margin-bottom: 1.1rem;
+}
+
+.about-text p:last-of-type {
+  margin-bottom: 1.4rem;
+}
+
+/* social link buttons */
+.about-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.social-btn {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #000;
+  color: #000;
+  padding: 10px 24px;
+  display: inline-block;
+  background: #f0f0f0;
+  box-shadow: 4px 4px 0 0 #000;
+  transition:
+    box-shadow 1s ease-in-out,
+    transform 1s ease-in-out;
+  text-decoration: none;
+}
+
+.social-btn:hover {
+  box-shadow: 1px 1px 0 0 #000;
+  transform: translate(3px, 3px);
+  text-decoration: none;
+  color: #000;
+}
+
+/* education block */
+.edu-block {
+  margin-top: 1.6rem;
+  border-top: 1px solid #e0e0e0;
+  padding-top: 1.2rem;
+}
+
+.edu-block h4 {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.edu-block p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0;
+}

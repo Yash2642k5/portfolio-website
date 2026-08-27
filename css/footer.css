@@ -1,0 +1,27 @@
+/* ════════════════════════════════════════════
+   FOOTER
+════════════════════════════════════════════ */
+footer {
+  border-top: 1px solid #000;
+  padding: 1.2rem 0 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+footer p {
+  font-size: 15px;
+  font-weight: 500;
+  color: #888;
+}
+
+footer a {
+  color: #888;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+
+footer a:hover {
+  color: #000;
+}

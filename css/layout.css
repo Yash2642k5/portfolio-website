@@ -1,0 +1,8 @@
+/* ════════════════════════════════════════════
+   PAGE WRAPPER
+════════════════════════════════════════════ */
+.page-wrap {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: calc(8vh + 52px) 4.5rem 2rem;
+}

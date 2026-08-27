@@ -1,0 +1,64 @@
+/* ════════════════════════════════════════════
+   SKILLS
+════════════════════════════════════════════ */
+.skills-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  padding-left: 3.5rem;
+}
+
+.skill-row {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0;
+  width: 100%;
+  padding: 1.6rem 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.skill-row:first-child {
+  border-top: 1px solid #e8e8e8;
+}
+
+.skill-category {
+  flex: 0 0 160px;
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "Ramaraja", serif;
+  color: #000;
+  text-transform: none;
+  letter-spacing: 0;
+  padding-top: 6px;
+  padding-right: 2rem;
+}
+
+.skill-tags {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.stag {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1.5px solid #555;
+  color: #111;
+  padding: 4px 8px;
+  background: #ebebeb;
+  cursor: default;
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    color 0.15s;
+}
+
+.stag:hover {
+  background: #bdffb7;
+  border-color: #5db858;
+  color: #1a4a17;
+}

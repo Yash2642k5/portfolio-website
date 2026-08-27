@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yash Sinha</title>
+    <link rel="icon" type="image/png" href="media/photos/yash0001.png" />
+
+    <!-- Ramaraja — heading serif (matches gracesportfolio.com) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ramaraja&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Reveal mode: force all data-scroll elements visible (used for screenshots) -->
+    <script>
+      if (location.search.includes("reveal"))
+        document.documentElement.classList.add("reveal-mode");
+    </script>
+
+    <!-- Styles — one file per concern, loaded in cascade order -->
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/section-heads.css" />
+    <link rel="stylesheet" href="css/cards.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <!-- ══════════════════════════════════════
+       FIXED NAV BAR
+    ══════════════════════════════════════ -->
+    <!-- @include: nav -->
+
+    <!-- ══════════════════════════════════════
+       PAGE CONTENT
+    ══════════════════════════════════════ -->
+    <div class="page-wrap">
+      <!-- @include: hero -->
+      <!-- @include: work -->
+      <!-- @include: projects -->
+      <!-- @include: achievements -->
+      <!-- @include: skills -->
+      <!-- @include: about -->
+    </div>
+    <!-- /.page-wrap -->
+
+    <!-- ══════════════════════════════════════
+       JAVASCRIPT
+    ══════════════════════════════════════ -->
+    <script>
+      /* ── Scroll animation via IntersectionObserver ── */
+      if (location.search.includes("reveal")) {
+        document
+          .querySelectorAll("[data-scroll]")
+          .forEach((el) => el.classList.add("in-view"));
+      }
+
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("in-view");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.07, rootMargin: "0px 0px -40px 0px" },
+      );
+
+      document
+        .querySelectorAll("[data-scroll]")
+        .forEach((el) => io.observe(el));
+
+      /* ── Nav border thickens slightly on scroll ── */
+      const topbar = document.getElementById("topbar");
+      window.addEventListener(
+        "scroll",
+        () => {
+          topbar.style.boxShadow =
+            window.scrollY > 4 ? "0 2px 0 rgba(0,0,0,0.08)" : "none";
+        },
+        { passive: true },
+      );
+    </script>
+  </body>
+</html>

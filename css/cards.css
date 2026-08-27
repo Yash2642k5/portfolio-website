@@ -1,0 +1,245 @@
+/* ════════════════════════════════════════════
+   WORK CARDS GRID
+════════════════════════════════════════════ */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.5rem 2.5rem;
+  padding-right: 14px;
+  padding-bottom: 14px;
+}
+
+/* ── Card stacked effect ──
+   box-shadow creates a pixel-perfect black shadow offset bottom-right.
+   No transform needed so portrait cards always align correctly. */
+.card-frame {
+  display: block;
+  border: none;
+  background: transparent;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+}
+
+.work-card {
+  border: 1px solid #000;
+  background-color: #fafafa;
+  box-shadow: 10px 10px 0 0 #000;
+  transition:
+    box-shadow 1s ease-in-out,
+    transform 1s ease-in-out;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card-frame:hover .work-card {
+  box-shadow: 2px 2px 0 0 #000;
+  transform: translate(8px, 8px);
+}
+
+/* Color-matched border + shadow per gradient */
+.work-card:has(.grad-ai-commerce)                    { border-color: #6c3fc2; box-shadow: 10px 10px 0 0 #6c3fc2; }
+.card-frame:hover .work-card:has(.grad-ai-commerce)  { box-shadow: 2px 2px 0 0 #6c3fc2; }
+
+.work-card:has(.grad-algo-viz)                       { border-color: #2ea84a; box-shadow: 10px 10px 0 0 #2ea84a; }
+.card-frame:hover .work-card:has(.grad-algo-viz)     { box-shadow: 2px 2px 0 0 #2ea84a; }
+
+.work-card:has(.grad-yourStory)                      { border-color: #c0392b; box-shadow: 10px 10px 0 0 #c0392b; }
+.card-frame:hover .work-card:has(.grad-yourStory)    { box-shadow: 2px 2px 0 0 #c0392b; }
+
+.work-card:has(.grad-tech-head)                      { border-color: #1565c0; box-shadow: 10px 10px 0 0 #1565c0; }
+.card-frame:hover .work-card:has(.grad-tech-head)    { box-shadow: 2px 2px 0 0 #1565c0; }
+
+.work-card:has(.grad-sae)                            { border-color: #c47200; box-shadow: 10px 10px 0 0 #c47200; }
+.card-frame:hover .work-card:has(.grad-sae)          { box-shadow: 2px 2px 0 0 #c47200; }
+
+.work-card:has(.grad-open)                           { border-color: #555;    box-shadow: 10px 10px 0 0 #555; }
+.card-frame:hover .work-card:has(.grad-open)         { box-shadow: 2px 2px 0 0 #555; }
+
+.work-card:has(.grad-natwest)                        { border-color: #4e2a84; box-shadow: 10px 10px 0 0 #4e2a84; }
+.card-frame:hover .work-card:has(.grad-natwest)      { box-shadow: 2px 2px 0 0 #4e2a84; }
+
+.work-card:has(.grad-scam)                           { border-color: #c2185b; box-shadow: 10px 10px 0 0 #c2185b; }
+.card-frame:hover .work-card:has(.grad-scam)         { box-shadow: 2px 2px 0 0 #c2185b; }
+
+.work-card:has(.grad-ev)                             { border-color: #0891b2; box-shadow: 10px 10px 0 0 #0891b2; }
+.card-frame:hover .work-card:has(.grad-ev)           { box-shadow: 2px 2px 0 0 #0891b2; }
+
+/* gradient image area at top of each card */
+.card-visual {
+  width: 100%;
+  height: 240px;
+  display: block;
+}
+
+/* project-specific gradients */
+.grad-ai-commerce {
+  background: linear-gradient(
+    180deg,
+    #0a0a1a 0%,
+    #1a1040 40%,
+    #3d1c7a 80%,
+    #6c3fc2 100%
+  );
+}
+.grad-algo-viz {
+  background: linear-gradient(
+    180deg,
+    #003d1f 0%,
+    #00692e 45%,
+    #2ea84a 80%,
+    #72d98a 100%
+  );
+}
+.grad-yourStory {
+  background: linear-gradient(
+    180deg,
+    #4a0000 0%,
+    #8b0000 45%,
+    #c0392b 80%,
+    #e88080 100%
+  );
+}
+.grad-tech-head {
+  background: linear-gradient(
+    180deg,
+    #001f4d 0%,
+    #003885 45%,
+    #1565c0 80%,
+    #6fa8f5 100%
+  );
+}
+.grad-sae {
+  background: linear-gradient(
+    180deg,
+    #2d1b00 0%,
+    #7a4500 45%,
+    #c47200 80%,
+    #f5b942 100%
+  );
+}
+.grad-open {
+  background: linear-gradient(
+    180deg,
+    #1a1a1a 0%,
+    #333 45%,
+    #555 80%,
+    #888 100%
+  );
+}
+.grad-natwest {
+  background: linear-gradient(
+    180deg,
+    #1f1033 0%,
+    #35195c 45%,
+    #4e2a84 80%,
+    #9370c9 100%
+  );
+}
+.grad-scam {
+  background: linear-gradient(
+    180deg,
+    #330011 0%,
+    #6b0d33 45%,
+    #c2185b 80%,
+    #ff7aa8 100%
+  );
+}
+.grad-ev {
+  background: linear-gradient(
+    180deg,
+    #00262b 0%,
+    #024a5b 45%,
+    #0891b2 80%,
+    #6fdcf0 100%
+  );
+}
+
+/* card body (text area) */
+.card-body {
+  padding: 1.1rem 1.3rem 1.3rem;
+  background: #fafafa;
+}
+
+.card-project-type {
+  font-size: 12px;
+  font-weight: 500;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.5rem;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.card-title {
+  font-family: "Ramaraja", serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+
+.card-desc {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.tag {
+  font-size: 13px;
+  font-weight: 500;
+  font-family: "IBM Plex Mono", monospace;
+  border: 1px solid #ccc;
+  color: #444;
+  padding: 3px 10px;
+  border-radius: 0;
+}
+
+/* project-specific underline accent on card title */
+.underline-ai {
+  border-bottom: 2px solid #6c3fc2;
+  display: inline;
+}
+.underline-algo {
+  border-bottom: 2px solid #2ea84a;
+  display: inline;
+}
+.underline-hack {
+  border-bottom: 2px solid #c0392b;
+  display: inline;
+}
+.underline-tech {
+  border-bottom: 2px solid #1565c0;
+  display: inline;
+}
+.underline-sae {
+  border-bottom: 2px solid #c47200;
+  display: inline;
+}
+.underline-open {
+  border-bottom: 2px solid #555;
+  display: inline;
+}
+.underline-natwest {
+  border-bottom: 2px solid #4e2a84;
+  display: inline;
+}
+.underline-scam {
+  border-bottom: 2px solid #c2185b;
+  display: inline;
+}
+.underline-ev {
+  border-bottom: 2px solid #0891b2;
+  display: inline;
+}

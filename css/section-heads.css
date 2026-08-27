@@ -1,0 +1,35 @@
+/* ════════════════════════════════════════════
+   SECTION HEADINGS
+════════════════════════════════════════════ */
+.section-block {
+  margin-bottom: 10rem;
+  padding-top: 2rem;
+}
+
+.section-block:last-child {
+  margin-bottom: 0;
+}
+
+.section-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+  padding: 0.4rem 1rem;
+  margin-bottom: 3rem;
+}
+
+.section-head h2 {
+  font-family: "Ramaraja", serif;
+  font-size: 36px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.section-head .section-hint {
+  font-size: 15px;
+  font-weight: 500;
+  color: #888;
+  font-family: "IBM Plex Mono", monospace;
+}
